@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>แอประบบการเงิน รพ.ศรีสาคร</title><link rel="icon" type="image/png" href="icon-192.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#0b5c55"><link rel="stylesheet" href="app.css"></head>
+<body><div class="wrap"><div class="hd"><img src="icon-512.png" alt=""><div><h1>แอประบบบริหารการเงิน</h1><p>โรงพยาบาลศรีสาคร จังหวัดนราธิวาส</p></div></div>
+<div class="grid" id="g"></div>
+<div class="note"><b>วิธีติดตั้ง:</b> แตะแอปที่ต้องการ แล้วกดปุ่ม <b>ติดตั้ง</b> แถบด้านบน<br>
+• <b>Android:</b> ใช้ Chrome · <b>iPhone/iPad:</b> ใช้ Safari → ปุ่มแชร์ ⬆︎ → เพิ่มไปยังหน้าจอโฮม · <b>คอมพิวเตอร์:</b> Chrome หรือ Edge<br>
+ถ้าเปิดจาก LINE ให้เลือก "เปิดในเบราว์เซอร์" ก่อน</div>
+<p style="color:#5b6b67;font-size:.8rem;margin-top:18px">รวบรวมและพัฒนาระบบโดย นพ.มุคลิซ เง๊าะ โรงพยาบาลศรีสาคร จังหวัดนราธิวาส</p></div>
+<script src="config.js"></script><script>
+var g=document.getElementById('g');Object.keys(APPS).forEach(function(k){var a=APPS[k];var e=document.createElement('a');e.className='card'+(a.url?'':' off');e.href=k+'/';
+e.innerHTML='<img src="'+k+'/icon-192.png" alt=""><b>'+a.short+'</b><small>'+(a.url?a.desc:'ยังไม่เปิดใช้')+'</small>';g.appendChild(e)});
+</script></body></html>
